@@ -97,7 +97,7 @@
 		9EE42808263FEDCB0015A0B2 /* ProjetSurfSpot */ = {
 			isa = PBXGroup;
 			children = (
-				9EE42840263FFF560015A0B2 /* Viewmodel */,
+				9EE42843264020D00015A0B2 /* ViewModel */,
 				9EE4283F263FFF490015A0B2 /* Model */,
 				9EE4283A263FFE870015A0B2 /* View */,
 				9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */,
@@ -150,11 +150,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9EE42840263FFF560015A0B2 /* Viewmodel */ = {
+		9EE42843264020D00015A0B2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Viewmodel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
