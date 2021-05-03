@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EE4280A263FEDCB0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42809263FEDCB0015A0B2 /* ProjetSurfSpotApp.swift */; };
-		9EE4280C263FEDCB0015A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4280B263FEDCB0015A0B2 /* ContentView.swift */; };
 		9EE4280E263FEDCE0015A0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */; };
 		9EE42811263FEDCE0015A0B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE42810263FEDCE0015A0B2 /* Preview Assets.xcassets */; };
 		9EE4281C263FEDCF0015A0B2 /* ProjetSurfSpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4281B263FEDCF0015A0B2 /* ProjetSurfSpotTests.swift */; };
 		9EE42827263FEDCF0015A0B2 /* ProjetSurfSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42826263FEDCF0015A0B2 /* ProjetSurfSpotUITests.swift */; };
+		9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283B263FFEAA0015A0B2 /* ContentView.swift */; };
+		9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */; };
+		9EE42842264003060015A0B2 /* spotdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* spotdb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		9EE42806263FEDCB0015A0B2 /* ProjetSurfSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetSurfSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE42809263FEDCB0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
-		9EE4280B263FEDCB0015A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EE42810263FEDCE0015A0B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9EE42812263FEDCE0015A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,9 @@
 		9EE42822263FEDCF0015A0B2 /* ProjetSurfSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetSurfSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE42826263FEDCF0015A0B2 /* ProjetSurfSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotUITests.swift; sourceTree = "<group>"; };
 		9EE42828263FEDCF0015A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EE4283B263FFEAA0015A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
+		9EE42841264003060015A0B2 /* spotdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotdb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 		9EE42808263FEDCB0015A0B2 /* ProjetSurfSpot */ = {
 			isa = PBXGroup;
 			children = (
-				9EE42809263FEDCB0015A0B2 /* ProjetSurfSpotApp.swift */,
-				9EE4280B263FEDCB0015A0B2 /* ContentView.swift */,
+				9EE42840263FFF560015A0B2 /* Viewmodel */,
+				9EE4283F263FFF490015A0B2 /* Model */,
+				9EE4283A263FFE870015A0B2 /* View */,
 				9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */,
 				9EE42812263FEDCE0015A0B2 /* Info.plist */,
 				9EE4280F263FEDCE0015A0B2 /* Preview Content */,
@@ -128,6 +131,30 @@
 				9EE42828263FEDCF0015A0B2 /* Info.plist */,
 			);
 			path = ProjetSurfSpotUITests;
+			sourceTree = "<group>";
+		};
+		9EE4283A263FFE870015A0B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EE4283B263FFEAA0015A0B2 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EE4283F263FFF490015A0B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */,
+				9EE42841264003060015A0B2 /* spotdb.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EE42840263FFF560015A0B2 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE4280C263FEDCB0015A0B2 /* ContentView.swift in Sources */,
-				9EE4280A263FEDCB0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
+				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
+				9EE42842264003060015A0B2 /* spotdb.swift in Sources */,
+				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
