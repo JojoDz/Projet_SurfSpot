@@ -14,6 +14,7 @@
 		9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283B263FFEAA0015A0B2 /* ContentView.swift */; };
 		9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */; };
 		9EE42842264003060015A0B2 /* spotdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* spotdb.swift */; };
+		9EE42845264021DF0015A0B2 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42844264021DF0015A0B2 /* Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9EE4283B263FFEAA0015A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
 		9EE42841264003060015A0B2 /* spotdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotdb.swift; sourceTree = "<group>"; };
+		9EE42844264021DF0015A0B2 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		9EE42843264020D00015A0B2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9EE42844264021DF0015A0B2 /* Testing.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
 				9EE42842264003060015A0B2 /* spotdb.swift in Sources */,
+				9EE42845264021DF0015A0B2 /* Testing.swift in Sources */,
 				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
