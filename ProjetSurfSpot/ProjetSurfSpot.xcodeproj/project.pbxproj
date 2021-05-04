@@ -16,6 +16,8 @@
 		9EE42842264003060015A0B2 /* SpotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* SpotModel.swift */; };
 		F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A13264149A9008BF4F3 /* SpotList.swift */; };
 		F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A1526414A0C008BF4F3 /* SpotRow.swift */; };
+		9EE42842264003060015A0B2 /* spotdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* spotdb.swift */; };
+		9EE42845264021DF0015A0B2 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42844264021DF0015A0B2 /* Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9EE42841264003060015A0B2 /* SpotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotModel.swift; sourceTree = "<group>"; };
 		F27E1A13264149A9008BF4F3 /* SpotList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotList.swift; sourceTree = "<group>"; };
 		F27E1A1526414A0C008BF4F3 /* SpotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotRow.swift; sourceTree = "<group>"; };
+		9EE42841264003060015A0B2 /* spotdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotdb.swift; sourceTree = "<group>"; };
+		9EE42844264021DF0015A0B2 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */,
+				9EE42844264021DF0015A0B2 /* Testing.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -295,6 +300,8 @@
 				F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */,
 				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
 				9EE42842264003060015A0B2 /* SpotModel.swift in Sources */,
+				9EE42842264003060015A0B2 /* spotdb.swift in Sources */,
+				9EE42845264021DF0015A0B2 /* Testing.swift in Sources */,
 				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
 				F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */,
 			);
