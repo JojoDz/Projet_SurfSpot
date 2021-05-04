@@ -13,7 +13,9 @@
 		9EE42827263FEDCF0015A0B2 /* ProjetSurfSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42826263FEDCF0015A0B2 /* ProjetSurfSpotUITests.swift */; };
 		9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283B263FFEAA0015A0B2 /* ContentView.swift */; };
 		9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */; };
-		9EE42842264003060015A0B2 /* spotdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* spotdb.swift */; };
+		9EE42842264003060015A0B2 /* SpotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42841264003060015A0B2 /* SpotModel.swift */; };
+		F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A13264149A9008BF4F3 /* SpotList.swift */; };
+		F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A1526414A0C008BF4F3 /* SpotRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		9EE42828263FEDCF0015A0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE4283B263FFEAA0015A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
-		9EE42841264003060015A0B2 /* spotdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotdb.swift; sourceTree = "<group>"; };
+		9EE42841264003060015A0B2 /* SpotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotModel.swift; sourceTree = "<group>"; };
+		F27E1A13264149A9008BF4F3 /* SpotList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotList.swift; sourceTree = "<group>"; };
+		F27E1A1526414A0C008BF4F3 /* SpotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,7 @@
 		9EE42808263FEDCB0015A0B2 /* ProjetSurfSpot */ = {
 			isa = PBXGroup;
 			children = (
-				9EE42843264020D00015A0B2 /* ViewModel */,
+				F27E19C92640217C008BF4F3 /* ViewModel */,
 				9EE4283F263FFF490015A0B2 /* Model */,
 				9EE4283A263FFE870015A0B2 /* View */,
 				9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */,
@@ -144,15 +148,17 @@
 		9EE4283F263FFF490015A0B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */,
-				9EE42841264003060015A0B2 /* spotdb.swift */,
+				F27E1A13264149A9008BF4F3 /* SpotList.swift */,
+				9EE42841264003060015A0B2 /* SpotModel.swift */,
+				F27E1A1526414A0C008BF4F3 /* SpotRow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9EE42843264020D00015A0B2 /* ViewModel */ = {
+		F27E19C92640217C008BF4F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */,
 				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
-				9EE42842264003060015A0B2 /* spotdb.swift in Sources */,
+				9EE42842264003060015A0B2 /* SpotModel.swift in Sources */,
 				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
+				F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
