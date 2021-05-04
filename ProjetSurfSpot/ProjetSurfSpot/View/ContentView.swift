@@ -11,23 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            VStack {
-                Text("Passage Beausoleil")
-                    .font(.title)
-                    .fontWeight(.black)
-                    .foregroundColor(Color.blue)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                Text("Capbreton")
-                    .font(.subheadline)
-                    .fontWeight(.black)
-                    .foregroundColor(Color.blue)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                Image("passageSoleil")
-                    .resizable()
-                    .scaledToFit()
-            }
+        SpotList()
     }
 }
 

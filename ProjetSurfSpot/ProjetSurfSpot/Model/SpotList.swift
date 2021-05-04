@@ -9,8 +9,12 @@ import SwiftUI
 
 struct SpotList: View {
     var body: some View {
-        List(spotList) { spotList in
-            SpotRow(spot: spotList)
+        NavigationView {
+            List(spotList) { spotList in
+                NavigationLink(destination: SpotDetail(spot: spotList)) { SpotRow(spot: spotList)
+                }
+            }
+            .navigationTitle("Surf Spots")
         }
     }
 }
