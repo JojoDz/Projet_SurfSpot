@@ -23,16 +23,16 @@ struct SpotDetail: View {
                     Text(spot.place)
                         .font(.subheadline)
                     Spacer()
-                    Text(spot.country)
-                        .font(.subheadline)
+//                    Text(spot.country)
+//                        .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
 
-                spot.image
-                    .resizable()
-                    .frame(width: 300, height: 300, alignment: .center)
-                    .padding()
+//                spot.image
+//                    .resizable()
+//                    .frame(width: 300, height: 300, alignment: .center)
+//                    .padding()
                 
                 Divider()
 

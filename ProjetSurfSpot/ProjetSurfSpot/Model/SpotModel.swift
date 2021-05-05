@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct Spot: Identifiable {
-    var id: Int
-    var title: String
-    var place: String
-    var country: String
-    var image: Image
-}
+//struct Spot: Identifiable {
+//    var id: Int
+//    var title: String
+//    var place: String
+//    var country: String
+//    var image: Image
+//}
