@@ -28,11 +28,10 @@ struct SpotDetail: View {
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-
-//                spot.image
-//                    .resizable()
-//                    .frame(width: 300, height: 300, alignment: .center)
-//                    .padding()
+                
+                ImageView(url: spot.image)
+                    .frame(width: 300, height: 300, alignment: .center)
+                    .padding()
                 
                 Divider()
 

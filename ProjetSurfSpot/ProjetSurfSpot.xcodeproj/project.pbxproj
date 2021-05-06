@@ -14,8 +14,9 @@
 		9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283B263FFEAA0015A0B2 /* ContentView.swift */; };
 		9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */; };
 		9EE42845264021DF0015A0B2 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42844264021DF0015A0B2 /* Testing.swift */; };
-		F20EB8E02642D75D009AE53C /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20EB8DF2642D75D009AE53C /* test.swift */; };
+		F20EB8E02642D75D009AE53C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20EB8DF2642D75D009AE53C /* ImageView.swift */; };
 		F22B16DE2642EBF100050817 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = F22B16DD2642EBF100050817 /* URLImage */; };
+		F22E34AF2643E84000F6C61A /* DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E34AE2643E84000F6C61A /* DecodeURL.swift */; };
 		F25EC62D26417B8100AF734D /* SpotDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25EC62C26417B8000AF734D /* SpotDetail.swift */; };
 		F25EC62F2641850000AF734D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25EC62E2641850000AF734D /* Data.swift */; };
 		F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A13264149A9008BF4F3 /* SpotList.swift */; };
@@ -54,7 +55,9 @@
 		9EE4283B263FFEAA0015A0B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
 		9EE42844264021DF0015A0B2 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
-		F20EB8DF2642D75D009AE53C /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = test.swift; path = ProjetSurfSpot/View/test.swift; sourceTree = "<group>"; };
+		F20EB8DF2642D75D009AE53C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F22E34AE2643E84000F6C61A /* DecodeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeURL.swift; sourceTree = "<group>"; };
+		F22E3B5D264415A900E6A18F /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F25EC62C26417B8000AF734D /* SpotDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetail.swift; sourceTree = "<group>"; };
 		F25EC62E2641850000AF734D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F27E1A13264149A9008BF4F3 /* SpotList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotList.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		9EE427FD263FEDCA0015A0B2 = {
 			isa = PBXGroup;
 			children = (
-				F20EB8DF2642D75D009AE53C /* test.swift */,
 				9EE42808263FEDCB0015A0B2 /* ProjetSurfSpot */,
 				9EE4281A263FEDCF0015A0B2 /* ProjetSurfSpotTests */,
 				9EE42825263FEDCF0015A0B2 /* ProjetSurfSpotUITests */,
@@ -119,6 +121,7 @@
 				9EE4280D263FEDCE0015A0B2 /* Assets.xcassets */,
 				9EE42812263FEDCE0015A0B2 /* Info.plist */,
 				9EE4280F263FEDCE0015A0B2 /* Preview Content */,
+				F22E3B5D264415A900E6A18F /* data.json */,
 			);
 			path = ProjetSurfSpot;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 		9EE4283A263FFE870015A0B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F20EB8DF2642D75D009AE53C /* ImageView.swift */,
 				F27E1A1526414A0C008BF4F3 /* SpotRow.swift */,
 				F27E1A13264149A9008BF4F3 /* SpotList.swift */,
 				F25EC62C26417B8000AF734D /* SpotDetail.swift */,
@@ -163,6 +167,7 @@
 		9EE4283F263FFF490015A0B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F22E34AE2643E84000F6C61A /* DecodeURL.swift */,
 				F28CF5D4264152F800602785 /* SpotModel.swift */,
 			);
 			path = Model;
@@ -316,11 +321,12 @@
 				F28CF5D5264152F800602785 /* SpotModel.swift in Sources */,
 				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
 				9EE42845264021DF0015A0B2 /* Testing.swift in Sources */,
-				F20EB8E02642D75D009AE53C /* test.swift in Sources */,
+				F20EB8E02642D75D009AE53C /* ImageView.swift in Sources */,
 				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
 				F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */,
 				F25EC62D26417B8100AF734D /* SpotDetail.swift in Sources */,
 				F25EC62F2641850000AF734D /* Data.swift in Sources */,
+				F22E34AF2643E84000F6C61A /* DecodeURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

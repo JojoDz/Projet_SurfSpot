@@ -8,10 +8,20 @@
 import Foundation
 import SwiftUI
 
-//struct Spot: Identifiable {
-//    var id: Int
-//    var title: String
-//    var place: String
-//    var country: String
-//    var image: Image
-//}
+struct Record: Codable {
+    var records: [Spot]
+}
+
+struct Spot: Codable, Identifiable {
+    var id: Int
+    var title: String
+    var place: String
+    var image: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title = "Surf Break"
+        case image = "Photos"
+        case place = "address"
+        case id
+    }
+}

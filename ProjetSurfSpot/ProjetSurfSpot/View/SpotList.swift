@@ -7,20 +7,22 @@
 
 import SwiftUI
 
-//struct SpotList: View {
-//    var body: some View {
-//        NavigationView {
-//            List(spotList) { spotList in
-//                NavigationLink(destination: SpotDetail(spot: spotList)) { SpotRow(spot: spotList)
-//                }
-//            }
-//            .navigationTitle("Surf Spots")
-//        }
-//    }
-//}
-//
-//struct SpotList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SpotList()
-//    }
-//}
+struct SpotList: View {
+    //var spot: Spot
+    var body: some View {
+        
+        NavigationView {
+            List(spotList) { spotList in
+                NavigationLink(destination: SpotDetail(spot: spotList)) { SpotRow(spot: spotList)
+                }
+            }
+            .navigationTitle("Surf Spots")
+        }
+    }
+}
+
+struct SpotList_Previews: PreviewProvider {
+    static var previews: some View {
+        SpotList()
+    }
+}
