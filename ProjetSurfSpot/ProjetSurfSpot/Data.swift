@@ -28,4 +28,4 @@ var json = """
 
 let decoder = JSONDecoder()
 let product = try! decoder.decode(Record.self, from: json)
-let spotList = product.records
+//let spotList = product.records

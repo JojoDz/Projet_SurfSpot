@@ -21,7 +21,7 @@ struct Spot: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case title = "Surf Break"
         case image = "Photos"
-        case place = "address"
+        case place = "Address"
         case id
     }
 }
