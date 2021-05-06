@@ -14,13 +14,13 @@ struct SpotDetail: View {
         
         ScrollView {
             VStack(alignment: .leading) {
-                Text(spot.title)
+                Text(spot.fields.title.first ?? "Title")
                     .font(.title)
                     .fontWeight(.medium)
                     .foregroundColor(Color.black)
                 
                 HStack {
-                    Text(spot.place)
+                    Text(spot.fields.place)
                         .font(.subheadline)
                     Spacer()
 //                    Text(spot.country)
@@ -29,19 +29,19 @@ struct SpotDetail: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
-                ImageView(url: spot.image)
-                    .frame(width: 300, height: 300, alignment: .center)
-                    .padding()
+//                ImageView(url: spot.image)
+//                    .frame(width: 300, height: 300, alignment: .center)
+//                    .padding()
                 
                 Divider()
 
-                Text("About \(spot.title)")
+                Text("About \(spot.fields.title.first ?? "Title")")
                     .font(.title2)
                 Text("Description")
             }
             .padding()
         }
-        .navigationTitle(spot.title)
+        .navigationTitle(spot.fields.title.first ?? "Title")
         .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -13,15 +13,23 @@ struct Record: Codable {
 }
 
 struct Spot: Codable, Identifiable {
-    var id: Int
-    var title: String
+    var id: String
+    var fields: Fields
+
+}
+
+struct Fields: Codable {
+    var title: [String]
     var place: String
-    var image: String
+    //var image: String
     
     enum CodingKeys: String, CodingKey {
         case title = "Surf Break"
-        case image = "Photos"
+        //case image = "Photos"
         case place = "Address"
-        case id
     }
 }
+
+//struct Image: Codable {
+//    var
+//}
