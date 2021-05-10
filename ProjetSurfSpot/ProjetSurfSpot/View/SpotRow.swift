@@ -12,10 +12,10 @@ struct SpotRow: View {
     
     var body: some View {
         HStack {
-//            ImageView(url: spot.image)
-//                .clipShape(Circle())
-//                .frame(width: 50, height: 50)
-            Text(spot.fields.title.first ?? "Title")
+            ImageView(url: spot.fields.image.first!.url)
+                .clipShape(Circle())
+                .frame(width: 50, height: 50)
+            Text(spot.fields.title)
             Spacer()
         }
     }

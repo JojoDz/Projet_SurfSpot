@@ -19,17 +19,17 @@ struct Spot: Codable, Identifiable {
 }
 
 struct Fields: Codable {
-    var title: [String]
+    var title: String
     var place: String
-    //var image: String
+    var image: [Photo]
     
     enum CodingKeys: String, CodingKey {
-        case title = "Surf Break"
-        //case image = "Photos"
+        case title = "Destination"
         case place = "Address"
+        case image = "Photos"
     }
 }
 
-//struct Image: Codable {
-//    var
-//}
+struct Photo: Codable {
+    var url: String
+}
