@@ -8,40 +8,46 @@
 import SwiftUI
 
 struct SpotDetail: View {
-    var spot: Spot
+    @State var spot: Record
     
     var body: some View {
         
         ScrollView {
             VStack(alignment: .leading) {
-                Text(spot.fields.title)
+                Text(spot.records[0].fields.title)
                     .font(.title)
                     .fontWeight(.medium)
                     .foregroundColor(Color.black)
                 
-                Text(spot.fields.place)
+                Text(spot.records[0].fields.place)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 
-                ImageView(url: spot.fields.image.first!.url)
+                ImageView(url: spot.records[0].fields.image.first!.url)
                     .frame(width: 300, height: 300, alignment: .center)
                     .padding()
                 
                 Divider()
 
-                Text("About \(spot.fields.title)")
+                Text("About \(spot.records[0].fields.title)")
                     .font(.title2)
                 Text("Description")
             }
             .padding()
         }
-        .navigationTitle(spot.fields.title)
+        .navigationTitle(spot.records[0].fields.title)
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            Api().getSpots { (response) in
+            self.spot = response
+            }
+        }
     }
 }
 
-struct SpotDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        SpotDetail(spot: spotList[0])
-    }
-}
+
+//struct SpotDetail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SpotDetail(spot: Spot)
+//    }
+//}

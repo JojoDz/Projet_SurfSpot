@@ -12,13 +12,20 @@ struct Record: Codable {
     var records: [Spot]
 }
 
-struct Spot: Codable, Identifiable {
+struct Spot: Codable, Identifiable, Hashable {
+    static func == (lhs: Spot, rhs: Spot) -> Bool {
+        if (lhs.id == rhs.id) {
+            return true
+        } else {
+            return false
+        }
+    }
     var id: String
     var fields: Fields
 
 }
 
-struct Fields: Codable {
+struct Fields: Codable, Hashable {
     var title: String
     var place: String
     var image: [Photo]
@@ -30,6 +37,6 @@ struct Fields: Codable {
     }
 }
 
-struct Photo: Codable {
+struct Photo: Codable, Hashable {
     var url: String
 }

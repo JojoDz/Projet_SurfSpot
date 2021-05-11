@@ -17,11 +17,14 @@
 		9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */; };
 		9EE42845264021DF0015A0B2 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE42844264021DF0015A0B2 /* Testing.swift */; };
 		F20EB8E02642D75D009AE53C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20EB8DF2642D75D009AE53C /* ImageView.swift */; };
+		F22628ED264963AB0035A89F /* testlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22628EC264963AB0035A89F /* testlist.swift */; };
+		F22628F1264964890035A89F /* TestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22628F0264964890035A89F /* TestList.swift */; };
 		F22B16DE2642EBF100050817 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = F22B16DD2642EBF100050817 /* URLImage */; };
 		F22E34AF2643E84000F6C61A /* DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E34AE2643E84000F6C61A /* DecodeURL.swift */; };
 		F25EC62D26417B8100AF734D /* SpotDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25EC62C26417B8000AF734D /* SpotDetail.swift */; };
 		F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A13264149A9008BF4F3 /* SpotList.swift */; };
 		F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E1A1526414A0C008BF4F3 /* SpotRow.swift */; };
+		F289B3812649271F00938205 /* param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289B3802649271F00938205 /* param.swift */; };
 		F28CF5D5264152F800602785 /* SpotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CF5D4264152F800602785 /* SpotModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,10 +62,13 @@
 		9EE4283D263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetSurfSpotApp.swift; sourceTree = "<group>"; };
 		9EE42844264021DF0015A0B2 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		F20EB8DF2642D75D009AE53C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F22628EC264963AB0035A89F /* testlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = testlist.swift; path = ../../../../../testlist.swift; sourceTree = "<group>"; };
+		F22628F0264964890035A89F /* TestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestList.swift; path = ProjetSurfSpot/TestList.swift; sourceTree = "<group>"; };
 		F22E34AE2643E84000F6C61A /* DecodeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeURL.swift; sourceTree = "<group>"; };
 		F25EC62C26417B8000AF734D /* SpotDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetail.swift; sourceTree = "<group>"; };
 		F27E1A13264149A9008BF4F3 /* SpotList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotList.swift; sourceTree = "<group>"; };
 		F27E1A1526414A0C008BF4F3 /* SpotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotRow.swift; sourceTree = "<group>"; };
+		F289B3802649271F00938205 /* param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = param.swift; sourceTree = "<group>"; };
 		F28CF5D4264152F800602785 /* SpotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,8 @@
 		9EE427FD263FEDCA0015A0B2 = {
 			isa = PBXGroup;
 			children = (
+				F22628F0264964890035A89F /* TestList.swift */,
+				F22628EC264963AB0035A89F /* testlist.swift */,
 				9EE42808263FEDCB0015A0B2 /* ProjetSurfSpot */,
 				9EE4281A263FEDCF0015A0B2 /* ProjetSurfSpotTests */,
 				9EE42825263FEDCF0015A0B2 /* ProjetSurfSpotUITests */,
@@ -116,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9E75AC082644263D00477477 /* dataRecords.json */,
+				F289B3802649271F00938205 /* param.swift */,
 				F27E19C92640217C008BF4F3 /* ViewModel */,
 				9EE4283F263FFF490015A0B2 /* Model */,
 				9EE4283A263FFE870015A0B2 /* View */,
@@ -320,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27E1A1626414A0C008BF4F3 /* SpotRow.swift in Sources */,
+				F22628ED264963AB0035A89F /* testlist.swift in Sources */,
+				F289B3812649271F00938205 /* param.swift in Sources */,
 				F28CF5D5264152F800602785 /* SpotModel.swift in Sources */,
 				9EE4283C263FFEAA0015A0B2 /* ContentView.swift in Sources */,
 				9EE42845264021DF0015A0B2 /* Testing.swift in Sources */,
@@ -328,6 +339,7 @@
 				9EE4283E263FFF0D0015A0B2 /* ProjetSurfSpotApp.swift in Sources */,
 				F27E1A14264149A9008BF4F3 /* SpotList.swift in Sources */,
 				F25EC62D26417B8100AF734D /* SpotDetail.swift in Sources */,
+				F22628F1264964890035A89F /* TestList.swift in Sources */,
 				F22E34AF2643E84000F6C61A /* DecodeURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

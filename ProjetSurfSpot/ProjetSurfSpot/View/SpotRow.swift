@@ -7,27 +7,33 @@
 
 import SwiftUI
 
-struct SpotRow: View {
-    var spot: Spot
-    
-    var body: some View {
-        HStack {
-            ImageView(url: spot.fields.image.first!.url)
-                .clipShape(Circle())
-                .frame(width: 50, height: 50)
-            Text(spot.fields.title)
-            Spacer()
-        }
-    }
-}
+//struct SpotRow: View {
+//    //var spot: Spot
+//    @State var spot: Record
+//
+//    var body: some View {
+//        HStack {
+//            ImageView(url: spot.records[0].fields.image.first!.url)
+//                .clipShape(Circle())
+//                .frame(width: 50, height: 50)
+//            Text(spot.records[0].fields.title)
+//            Spacer()
+//        }
+//        .onAppear {
+//            Api().getSpots { (spot) in
+//                self.spot = spot
+//            }
+//        }
+//    }
+//}
 
-struct SpotRow_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            SpotRow(spot: spotList[0])
-            SpotRow(spot: spotList[1])
-        }
-        .previewLayout(.fixed(width: 300, height: 70))
-    
-    }
-}
+//struct SpotRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            SpotRow()
+//            SpotRow()
+//        }
+//        .previewLayout(.fixed(width: 300, height: 70))
+//    
+//    }
+//}
