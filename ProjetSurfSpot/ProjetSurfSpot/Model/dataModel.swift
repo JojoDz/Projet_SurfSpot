@@ -8,17 +8,14 @@
 import Foundation
 import SwiftUI
 
-
 class Api {
     func getSpots(completion: @escaping(Record) -> ()) {
-        guard let api = URL(string:"https://api.airtable.com/v0/appxT9ln6ixuCb3o1/Surf%20Destinations?api_key=keyr2qJakY4V5GIO2") else { return }
-        
+        guard let api = URL(string:"https://api.airtable.com/v0/appxT9ln6ixuCb3o1/Surf%20Destinations?api_key=keyTbt7JjwqkfNnYn") else { return }
+
         URLSession.shared.dataTask(with: api) { (data, _, _) in
             let decoder = JSONDecoder()
             let response = try? decoder.decode(Record.self, from: data!)
-            print("spots are coming")
-            print(response)
-            
+
             DispatchQueue.main.async {
                 completion(response!)
             }

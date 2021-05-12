@@ -8,32 +8,33 @@
 import SwiftUI
 
 //struct SpotRow: View {
-//    //var spot: Spot
-//    @State var spot: Record
+//
+//    @State var response: Record?
+//    var spot: Spot
 //
 //    var body: some View {
 //        HStack {
-//            ImageView(url: spot.records[0].fields.image.first!.url)
+//            ImageView(url: (response?.records[0].fields.image.first!.url)!)
 //                .clipShape(Circle())
 //                .frame(width: 50, height: 50)
-//            Text(spot.records[0].fields.title)
+//            Text((response?.records[0].fields.place)!)
 //            Spacer()
 //        }
 //        .onAppear {
-//            Api().getSpots { (spot) in
-//                self.spot = spot
+//            Api().getSpots { spots in
+//                response = spots
 //            }
-//        }
+//       }
 //    }
 //}
-
+//
 //struct SpotRow_Previews: PreviewProvider {
 //    static var previews: some View {
 //        Group {
-//            SpotRow()
+//            SpotRow(spot: )
 //            SpotRow()
 //        }
 //        .previewLayout(.fixed(width: 300, height: 70))
-//    
+//
 //    }
 //}
